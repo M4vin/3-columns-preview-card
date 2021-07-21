@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (paragraphs) */
+  --Very-light-gray/* (background, headings, buttons) */: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Very-light-gray);
+}
+
+.main {
+  margin: 0 100px;
+  height: 100vh;
+  color: var(--Very-light-gray);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 200px 1fr 200px;
+      grid-template-rows: 200px 1fr 200px;
+}
+
+.main .preview-card-main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (320px)[3];
+      grid-template-columns: repeat(3, 320px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .preview-card-main .sedans-container {
+  padding: 50px;
+  background-color: var(--Bright-orange);
+  border-radius: 0.5em 0 0 0.5em;
+  line-height: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px 70px 1fr 50px;
+      grid-template-rows: 80px 70px 1fr 50px;
+}
+
+.main .preview-card-main .sedans-container h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main .preview-card-main .sedans-container p {
+  color: var(--Transparent-white);
+}
+
+.main .preview-card-main .sedans-container button {
+  cursor: pointer;
+  font-size: 17px;
+  border: 0;
+  border-radius: 2em;
+  width: 150px;
+  color: var(--Bright-orange);
+}
+
+.main .preview-card-main .suvs-container {
+  padding: 50px;
+  background-color: var(--Dark-cyan);
+  line-height: 25px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px 70px 1fr 50px;
+      grid-template-rows: 80px 70px 1fr 50px;
+}
+
+.main .preview-card-main .suvs-container h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main .preview-card-main .suvs-container p {
+  color: var(--Transparent-white);
+}
+
+.main .preview-card-main .suvs-container button {
+  cursor: pointer;
+  font-size: 17px;
+  border: 0;
+  border-radius: 2em;
+  width: 150px;
+  color: var(--Dark-cyan);
+}
+
+.main .preview-card-main .luxury-container {
+  padding: 50px;
+  background-color: var(--Very-dark-cyan);
+  line-height: 25px;
+  border-radius: 0 0.5em 0.5em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 80px 70px 1fr 50px;
+      grid-template-rows: 80px 70px 1fr 50px;
+}
+
+.main .preview-card-main .luxury-container h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.main .preview-card-main .luxury-container p {
+  color: var(--Transparent-white);
+}
+
+.main .preview-card-main .luxury-container button {
+  cursor: pointer;
+  font-size: 17px;
+  border: 0;
+  border-radius: 2em;
+  width: 150px;
+  color: var(--Very-dark-cyan);
+}
+
+.main .attribution {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  padding: 50px 0;
+}
+
+@media (max-width: 375px) {
+  .main {
+    margin: 0;
+  }
+  .main .preview-card-main {
+    margin: 80px 30px 0;
+    grid-auto-flow: row;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main .preview-card-main .sedans-container {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+  .main .preview-card-main .suvs-container {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .main .preview-card-main .luxury-container {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    border-radius: 0 0 0.5em 0.5em;
+  }
+}
+/*# sourceMappingURL=index.css.map */
