@@ -163,16 +163,25 @@ body {
     grid-row: 1/2;
     border-radius: 0.5em 0.5em 0 0;
   }
+  .main .preview-card-main .sedans-container p {
+    padding-bottom: 20px;
+  }
   .main .preview-card-main .suvs-container {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+  }
+  .main .preview-card-main .suvs-container p {
+    padding-bottom: 20px;
   }
   .main .preview-card-main .luxury-container {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     border-radius: 0 0 0.5em 0.5em;
+  }
+  .main .preview-card-main .luxury-container p {
+    padding-bottom: 20px;
   }
   .main .attribution {
     -ms-grid-row: 2;

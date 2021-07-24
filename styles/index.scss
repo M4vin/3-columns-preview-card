@@ -134,13 +134,25 @@ body {
       .sedans-container {
         grid-row: 1/2;
         border-radius: 0.5em 0.5em 0 0;
+
+        p {
+          padding-bottom: 20px;
+        }
       }
       .suvs-container {
         grid-row: 2/3;
+
+        p {
+          padding-bottom: 20px;
+        }
       }
       .luxury-container {
         grid-row: 3/4;
         border-radius: 0 0 0.5em 0.5em;
+
+        p {
+          padding-bottom: 20px;
+        }
       }
     }
     .attribution {
